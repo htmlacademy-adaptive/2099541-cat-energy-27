@@ -1,0 +1,242 @@
+.owner-data {
+  width: 320px;
+  margin: 26px 0 23px 0;
+  padding: 0;
+  border: none;
+}
+
+.owner-data__container {
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.owner-data__title {
+  font-family: "oswald", sans-serif, monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  position: relative;
+  margin: 0 0 35px 20px;
+  padding: 0;
+  width: 187px;
+}
+
+.owner-data__title::after {
+  content: "";
+  display: block;
+  width: 99px;
+  position: absolute;
+  left: 197px;
+  top: 15px;
+  border: 2px solid var(--color-basic_green);
+}
+
+.owner-data__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.owner-data__item:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.owner-data__label {
+  font-family: "oswald", sans-serif, monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-right: 10px;
+}
+
+.owner-data__input {
+  height: 46px;
+  border: 1px solid var(--color-special_grey-2);
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding: 0;
+}
+
+.owner-data__input--mail {
+  width: 203px;
+}
+
+.owner-data__input--phone {
+  width: 186px;
+}
+
+.owner-data__input:placeholder-shown {
+  padding-left: 15px;
+}
+
+.owner-data__label-letter::after {
+  content: url("../img/owner-data/mail.svg");
+  position: absolute;
+  left: 246px;
+}
+
+.owner-data__label-phone::after {
+  content: url("../img/owner-data/phone.svg");
+  position: absolute;
+  left: 246px;
+}
+
+@media (min-width: @tablet-width) {
+  .owner-data {
+    width: 768px;
+    height: 236px;
+    margin: 0;
+    margin-bottom: 65px;
+  }
+
+  .owner-data__container {
+    max-width: 630px;
+    margin: 0;
+  }
+
+  .owner-data__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0 0 76px 0;
+    width: 514px;
+  }
+
+  .owner-data__title::before {
+    content: "";
+    display: block;
+    width: 30px;
+    position: absolute;
+    left: -79px;
+    top: 23px;
+    border: 2px solid var(--color-basic_green);
+  }
+
+  .owner-data__title::after {
+    content: "";
+    display: block;
+    width: 145px;
+    position: absolute;
+    left: 554px;
+    top: 23px;
+    border: 2px solid var(--color-basic_green);
+  }
+
+  .owner-data__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .owner-data__label {
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: 16px;
+  }
+
+  .owner-data__input {
+    height: 52px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .owner-data__input::placeholder {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .owner-data__input--mail {
+    width: 534px;
+  }
+
+  .owner-data__input--phone {
+    width: 513px;
+  }
+
+  .owner-data__label-letter::after {
+    content: url("../img/owner-data/mail.svg");
+    position: absolute;
+    left: 590px;
+    top: 10px;
+  }
+
+  .owner-data__label-phone::after {
+    content: url("../img/owner-data/phone.svg");
+    position: absolute;
+    left: 590px;
+    top: 13px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .owner-data {
+    width: 1440px;
+    height: 164px;
+    margin: 0 0 67px 0;
+  }
+
+  .owner-data__container {
+    max-width: 1220px;
+    margin: 0;
+  }
+
+  .owner-data__title::before {
+    content: "";
+    display: block;
+    width: 70px;
+    position: absolute;
+    left: -110px;
+    top: 20px;
+    border: 2px solid var(--color-basic_green);
+  }
+
+  .owner-data__title::after {
+    content: "";
+    display: block;
+    width: 778px;
+    position: absolute;
+    left: 552px;
+    top: 23px;
+    border: 2px solid var(--color-basic_green);
+  }
+
+  .owner-data__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .owner-data__item {
+    height: 52px;
+  }
+
+  .owner-data__item:not(:last-child) {
+    margin: 0;
+  }
+
+  .owner-data__input--mail {
+    width: 486px;
+  }
+
+  .owner-data__input--phone {
+    width: 472px;
+  }
+
+  .owner-data__label-letter::after {
+    content: url("../img/owner-data/mail.svg");
+    position: absolute;
+    left: 532px;
+    top: 10px;
+  }
+
+  .owner-data__label-phone::after {
+    content: url("../img/owner-data/phone.svg");
+    position: absolute;
+    left: 550px;
+    top: 13px;
+  }
+}

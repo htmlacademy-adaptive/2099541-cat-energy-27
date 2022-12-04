@@ -1,0 +1,103 @@
+.statistics__group {
+  position: relative;
+}
+
+.statistics__range-field {
+  -webkit-appearance: none;
+    width: 320px;
+    height: 4px;
+    background: transparent;
+    position: absolute;
+    left: -4px;
+    top: 120px;
+}
+
+.statistics__range-field::-webkit-slider-thumb {
+  -webkit-appearance: none;
+    appearance: none;
+    width: 40px;
+    height: 256px;
+    background: url("../img/statistics/curtain.svg");
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.statistics__range-field::-moz-range-thumb {
+  width: 40px;
+  height: 256px;
+  background: url("../img/statistics/curtain.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.statistics__image-cat--fat {
+  margin-left: 10px;
+  margin-top: -15px;
+}
+
+.statistics__image-cat--skinny {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  z-index: -1;
+}
+
+@media (min-width: @tablet-width) {
+  .statistics__range-field {
+    -webkit-appearance: none;
+      width: 600px;
+      height: 4px;
+      background: transparent;
+      position: absolute;
+      left: 80px;
+      top: 80px;
+  }
+
+  .statistics__range-field::-webkit-slider-thumb {
+    -webkit-appearance: none;
+      appearance: none;
+      width: 40px;
+      height: 512px;
+      background: url("../img/statistics/curtain-tablet.svg");
+      background-repeat: no-repeat;
+      cursor: pointer;
+  }
+
+  .statistics__range-field::-moz-range-thumb {
+    width: 40px;
+    height: 512px;
+    background: url("../img/statistics/curtain-tablet.svg");
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+  .statistics__image-cat--fat {
+    margin-left: 100px;
+    margin-top: -170px;
+  }
+
+  .statistics__image-cat--skinny {
+    position: absolute;
+    top: -170px;
+    right: 90px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .statistics__range-field {
+    -webkit-appearance: none;
+      left: 170px;
+      top: 115px;
+  }
+
+  .statistics__image-cat--fat {
+    margin-left: 190px;
+    margin-top: -140px;
+  }
+
+  .statistics__image-cat--skinny {
+    position: absolute;
+    top: -135px;
+    right: 0;
+  }
+}

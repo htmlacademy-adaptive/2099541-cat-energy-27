@@ -1,0 +1,145 @@
+.comment {
+  width: 320px;
+  padding: 0;
+  border: none;
+  margin: 0 0 23px 0;
+}
+
+.comment__container {
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.comment__title {
+  font-family: "oswald", sans-serif, monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  position: relative;
+  margin: 0 0 38px 20px;
+  padding: 0;
+  width: 280px;
+}
+
+.comment__title::after {
+  content: "";
+  display: block;
+  width: 158px;
+  position: absolute;
+  right: -20px;
+  top: 15px;
+  border: 2px solid var(--color-basic_green);
+}
+
+.comment__input {
+  width: 280px;
+  height: 141px;
+  border: 1px solid var(--color-special_grey-5);
+  text-align: center;
+  padding-top: 9px;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .comment {
+    width: 768px;
+    height: 286px;
+    padding: 0;
+    border: none;
+    margin: 0 0 63px 0;
+  }
+
+  .comment__container {
+    max-width: 630px;
+    height: 174px;
+    margin: 0;
+  }
+
+  .comment__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0 0 76px 0;
+  }
+
+  .comment__title::before {
+    content: "";
+    display: block;
+    width: 30px;
+    position: absolute;
+    left: -79px;
+    top: 20px;
+    border: 2px solid var(--color-basic_green);
+  }
+
+  .comment__title::after {
+    content: "";
+    display: block;
+    width: 478px;
+    position: absolute;
+    left: 220px;
+    top: 20px;
+    border: 2px solid var(--color-basic_green);
+  }
+
+  .comment__item {
+    height: 174px;
+  }
+
+  .comment__input {
+    width: 609px;
+    height: 162px;
+    text-align: left;
+    padding: 10px 0 0 19px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .comment__input::placeholder {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .comment {
+    width: 1440px;
+    height: 286px;
+    padding: 0;
+    border: none;
+    margin: 0 0 67px 0;
+  }
+
+  .comment__container {
+    max-width: 1220px;
+    margin: 0;
+    height: 174px;
+  }
+
+  .comment__title::before {
+    width: 70px;
+    left: -110px;
+  }
+
+  .comment__title::after {
+    width: 1108px;
+    left: 222px;
+  }
+
+  .comment__list {
+    height: 174px;
+  }
+
+  .comment__item {
+    height: 174px;
+  }
+
+  .comment__input {
+    width: 1199px;
+    height: 162px;
+    font-size: 20px;
+    line-height: 30px
+  }
+}

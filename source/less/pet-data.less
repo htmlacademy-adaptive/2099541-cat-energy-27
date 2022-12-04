@@ -1,0 +1,161 @@
+.pet-data {
+  width: 320px;
+  border: none;
+  margin: 0;
+  margin-bottom: 28px;
+  padding: 0;
+  border-bottom: 1px solid var(--color-special_grey-7);
+}
+
+.pet-data__container {
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.pet-data__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.pet-data__item:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.pet-data__item:last-child {
+  margin-bottom: 24px;
+}
+
+.pet-data__label {
+  font-family: "oswald", sans-serif, monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--color-special_dark-grey);
+  display:flex;
+  align-items: center;
+}
+
+.pet-data__input {
+  height: 45px;
+  border: 1px solid var(--color-special_grey-5);
+  padding: 0;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.pet-data__input::placeholder {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.pet-data__input:placeholder-shown {
+  padding-left: 19px;
+}
+
+.pet-data-name {
+  width: 210px;
+}
+
+.pet-data-weight {
+  width: 185px;
+}
+
+.pet-data-age {
+  width: 153px;
+}
+
+@media (min-width: @tablet-width) {
+  .pet-data {
+    width: 768px;
+    height: 196px;
+    border: none;
+    margin-bottom: 72px;
+  }
+
+  .pet-data__container {
+    max-width: 630px;
+    margin: 0;
+  }
+
+  .pet-data__item {
+    display: flex;
+    width: 630px;
+    height: 52px;
+  }
+
+  .pet-data__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .pet-data__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .pet-data__label {
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: 14px;
+  }
+
+  .pet-data__input {
+    height: 52px;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+
+  .pet-data__input::placeholder {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .pet-data-name {
+    width: 548px;
+  }
+
+  .pet-data-weight {
+    width: 520px;
+  }
+
+  .pet-data-age {
+    width: 479px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .pet-data {
+    width: 570px;
+    height: 196px;
+    border: none;
+    margin-bottom: 69px;
+  }
+
+  .pet-data__container {
+    max-width: 630px;
+    height: 196px;
+    margin: 0;
+  }
+
+  .pet-data__item {
+    display: flex;
+    justify-content: left;
+    width: 630px;
+    height: 52px;
+  }
+
+  .pet-data-name {
+    width: 488px;
+  }
+
+  .pet-data-weight {
+    width: 460px;
+  }
+
+  .pet-data-age {
+    width: 420px;
+  }
+}
