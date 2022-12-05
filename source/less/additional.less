@@ -12,7 +12,7 @@
 }
 
 .additional__title {
-  font-family: "oswald", sans-serif, monospace;
+  font-family: "oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -43,7 +43,7 @@
   flex-wrap: wrap;
 }
 
-.additional-mark {
+.additional__mark {
   display: inline-block;
   width: 28px;
   height: 28px;
@@ -51,15 +51,15 @@
   margin-right: 16px;
 }
 
-.additional__input[type="checkbox"]:checked + .additional-mark::before {
+.additional__input[type="checkbox"]:checked + .additional__mark::before {
   position: absolute;
   top: 8px;
   left: 6px;
   content: url("../img/additional/mobile/checkbox_active_mobile.svg");
 }
 
-.additional-text {
-  font-family: "oswald", sans-serif, monospace;
+.additional__text {
+  font-family: "oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -123,20 +123,20 @@
     margin-bottom: 0;
   }
 
-  .additional-mark {
+  .additional__mark {
     width: 38px;
     height: 38px;
     margin-right: 19px;
   }
 
-  .additional__input[type="checkbox"]:checked + .additional-mark::before {
+  .additional__input[type="checkbox"]:checked + .additional__mark::before {
     position: absolute;
     top: 10px;
     left: 8px;
     content: url("../img/additional//tablet/checkbox_active_tablet.svg");
   }
 
-  .additional-text {
+  .additional__text {
     font-size: 20px;
     line-height: 30px;
     margin-top: 6px;

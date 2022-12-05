@@ -1,5 +1,5 @@
 .main-navigation {
-  font-family: "oswald", sans-serif, monospace;
+  font-family: "oswald", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -36,6 +36,8 @@
 
 .main-navigation__list {
   min-width: 320px;
+  position: absolute;
+  left: 0;
 }
 
 .main-navigation__list-item {
@@ -64,8 +66,8 @@
 
   .main-navigation__container {
     position: absolute;
-    right: -20px;
-    top: 56px;
+    left: -300px;
+    top: 54px;
     z-index: 1;
   }
 
@@ -74,25 +76,17 @@
     background-color: var(--color-basic-white);
   }
 
-  .main-navigation--closed .main-navigation__list-item {
-    display: none;
-  }
-
-  .main-navigation--nojs .main-navigation__toggle {
-    display: none;
-  }
-
   .main-navigation--nojs .main-navigation__container {
-    position: fixed;
-    left: 8px;
-    top: 74px;
+    position: absolute;
+    left: -300px;
+    top: 54px;
     z-index: 1;
   }
 }
 
 @media (min-width: @tablet-width) {
   .main-navigation {
-    font-family: "oswald", sans-serif, monospace;
+    font-family: "oswald", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -143,7 +137,7 @@
 
 @media (min-width: @desktop-width) {
   .main-navigation {
-    font-family: "oswald", sans-serif, monospace;
+    font-family: "oswald", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;

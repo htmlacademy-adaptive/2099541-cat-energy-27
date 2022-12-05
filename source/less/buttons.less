@@ -1,8 +1,8 @@
-.green-button-index {
+.landing__link--green-button {
   width: 280px;
   height: 40px;
   background-color: var(--color-basic_green);
-  font-family: "oswald", sans-serif, monospace;
+  font-family: "oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -14,11 +14,11 @@
   padding: 0;
 }
 
-.green-button-form {
+.send-information__button--green-button {
   width: 280px;
   height: 40px;
   background-color: var(--color-basic_green);
-  font-family: "oswald", sans-serif, monospace;
+  font-family: "oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -30,11 +30,11 @@
   padding: 0;
 }
 
-.green-button-catalog {
+.catalog__item-button--green-button {
   width: 280px;
   height: 40px;
   background-color: var(--color-basic_green);
-  font-family: "oswald", sans-serif, monospace;
+  font-family: "oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -46,11 +46,11 @@
   padding: 0;
 }
 
-.green-button-catalog-additional {
+.additional-catalog__item-button--green-button {
   width: 280px;
   height: 40px;
   background-color: var(--color-basic_green);
-  font-family: "oswald", sans-serif, monospace;
+  font-family: "oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -60,32 +60,48 @@
   cursor: pointer;
   text-transform: uppercase;
   padding: 0;
+}
+
+.catalog__item-button--grey-button {
+  width: 280px;
+  height: 40px;
+  background-color: var(--color-basic_grey);
+  font-family: "oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--color-special_dark-grey);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  text-transform: uppercase;
 }
 
 @media (min-width: @tablet-width) {
-  .green-button-index {
+  .landing__link--green-button {
     width: 244px;
     height: 54px;
     font-size: 20px;
     line-height: 20px;
   }
 
-  .green-button-form {
+  .send-information__button--green-button {
     width: 282px;
     height: 52px;
     font-size: 20px;
     line-height: 0px;
   }
 
-  .green-button-catalog {
+  .catalog__item-button--green-button {
     width: 248px;
   }
 
-  .green-button-catalog-additional {
+  .additional-catalog__item-button--green-button {
     width: 632px;
     height: 40px;
     background-color: var(--color-basic_green);
-    font-family: "oswald", sans-serif, monospace;
+    font-family: "oswald", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -96,19 +112,28 @@
     text-transform: uppercase;
     padding: 0;
   }
+
+  .catalog__item-button--grey-button {
+    width: 248px;
+    line-height: 0px;
+  }
 }
 
 @media (min-width: @desktop-width) {
-  .green-button-form {
+  .send-information__button--green-button {
     width: 568px;
   }
 
-  .green-button-catalog {
+  .catalog__item-button--green-button {
     width: 168px;
   }
 
-  .green-button-catalog-additional {
+  .additional-catalog__item-button--green-button {
     width: 244px;
     line-height: 20px;
+  }
+
+  .catalog__item-button--grey-button {
+    width: 168px;
   }
 }

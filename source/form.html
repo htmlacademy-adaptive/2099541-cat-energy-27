@@ -44,8 +44,8 @@
     </div>
   </header>
 
-  <main class="main-container">
-    <h1 class="visually-hidden">Форма</h1>
+  <main class="primary-container">
+    <h1 class="primary-container__title visually-hidden">Форма</h1>
 
     <section class="form-data">
       <div class="form-data__container">
@@ -58,16 +58,16 @@
               <ul class="pet-data__list reset-list">
                 <li class="pet-data__item">
                   <label class="pet-data__label pet-data__label--required" for="name">имя:*</label>
-                  <input class="pet-data__input pet-data-name" type="text" placeholder="Барсик" name="name" id="name">
+                  <input class="pet-data__input pet-data__input--name" type="text" placeholder="Барсик" name="name" id="name">
                 </li>
                 <li class="pet-data__item">
                   <label class="pet-data__label pet-data__label--required" for="weight">вес (кг):*</label>
-                  <input class="pet-data__input pet-data-weight" type="number" placeholder="7" name="weight"
+                  <input class="pet-data__input pet-data__input--weight" type="number" placeholder="7" name="weight"
                     id="weight">
                 </li>
                 <li class="pet-data__item">
                   <label class="pet-data__label" for="age">возраст (лет):</label>
-                  <input class="pet-data__input pet-data-age" type="number" placeholder="7" name="age" id="age">
+                  <input class="pet-data__input pet-data__input--age" type="number" placeholder="7" name="age" id="age">
                 </li>
               </ul>
             </div>
@@ -138,37 +138,37 @@
                 <li class="additional__item grid-item">
                   <label class="additional__label">
                     <input class="visually-hidden additional__input" type="checkbox" name="sweetener" checked>
-                    <span class="additional-mark"></span>
-                    <span class="additional-text">Сахарозаменитель</span>
+                    <span class="additional__mark"></span>
+                    <span class="additional__text">Сахарозаменитель</span>
                   </label>
                 </li>
                 <li class="additional__item grid-item">
                   <label class="additional__label">
                     <input class="visually-hidden additional__input" type="checkbox" name="water">
-                    <span class="additional-mark"></span>
-                    <span class="additional-text">Питьевая вода</span>
+                    <span class="additional__mark"></span>
+                    <span class="additional__text">Питьевая вода</span>
                   </label>
                 </li>
                 <li class="additional__item grid-item">
                   <label class="additional__label">
                     <input class="visually-hidden additional__input" type="checkbox" name="milk">
-                    <span class="additional-mark"></span>
-                    <span class="additional-text">Молоко</span>
+                    <span class="additional__mark"></span>
+                    <span class="additional__text">Молоко</span>
                   </label>
                 </li>
                 <li class="additional__item grid-item">
                   <label class="additional__label">
                     <input class="visually-hidden additional__input" type="checkbox" name="vitamins">
-                    <span class="additional-mark"></span>
-                    <span class="additional-text">Витамины</span>
+                    <span class="additional__mark"></span>
+                    <span class="additional__text">Витамины</span>
                   </label>
                 </li>
               </ul>
             </div>
           </fieldset>
-          <div class="form-data__wrapper">
-            <button class="form-data__button green-button-form" type="submit">Отправить заявку</button>
-            <p class="form-data__about">* __ Обязательные поля</p>
+          <div class="send-information">
+            <button class="send-information__button send-information__button--green-button" type="submit">Отправить заявку</button>
+            <p class="send-information__about">* __ Обязательные поля</p>
           </div>
         </form>
       </div>
@@ -248,8 +248,6 @@
       </section>
     </div>
   </footer>
-
-  <script src="./js/script.js"></script>
 </body>
 
 </html>

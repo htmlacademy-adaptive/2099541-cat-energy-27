@@ -20,14 +20,15 @@
 }
 
 .service-data__name {
-  font-family: "oswald", sans-serif, monospace;
+  font-family: "oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: var(--color-special_dark-grey-2);
-
+  display: block;
+  margin-top: 8px;
 }
 
 .service-data__label {
@@ -55,11 +56,6 @@
   content: url("../img/service/mobile/radiobutton_active_mobile.svg");
 }
 
-.service-data__name {
-  display: block;
-  margin-top: 8px;
-}
-
 @media (min-width: @tablet-width) {
   .service-data {
     width: 768px;
@@ -77,9 +73,6 @@
 
   .service-data__list {
     margin-top: 20px;
-  }
-
-  .service-data__list {
     vertical-align: middle;
   }
 
