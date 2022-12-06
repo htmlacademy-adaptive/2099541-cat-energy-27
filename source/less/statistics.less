@@ -1,0 +1,334 @@
+.statistics {
+  background-color: var(--color-special_grey-4);
+  width: 320px;
+}
+
+.statistics__container {
+  height: 659px;
+}
+
+.statistics__wrapper {
+  max-width: 280px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.statistics__title {
+  font-family: "oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  margin: 25px 0 40px 0;
+}
+
+.statistics__description {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--color-special_dark-grey);
+  margin: 0 0 20px 0;
+}
+
+.statistics__list {
+  margin: 0 0 34px 0;
+}
+
+.statistics__item {
+  position: relative;
+  border: 1px solid var(--color-special_grey-2);
+  border-radius: 3px;
+}
+
+.statistics__item-number {
+  font-family: "oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: var(--color-basic-black);
+}
+
+.statistics__item-number--weight {
+  padding: 14px 42px 17px 42px;
+}
+
+.statistics__item-number--days {
+  padding: 14px 21px 17px 21px;
+}
+
+.statistics__item-description {
+  position: absolute;
+  width: 87px;
+  height: 31px;
+  bottom: -25px;
+  left: 15px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 100%;
+  color: var(--color-special_dark-grey);
+  background-color: var(--color-special_grey-4);
+  margin: 0;
+}
+
+.statistics__sum {
+  font-family: "oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 280px;
+  margin: 0 0 20px 0;
+}
+
+.statistics__group {
+  position: relative;
+  border: none;
+}
+
+.statistics__range-field {
+  -webkit-appearance: none;
+  width: 320px;
+  height: 4px;
+  background: transparent;
+  position: absolute;
+  left: -4px;
+  top: 120px;
+}
+
+.statistics__range-field::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 40px;
+  height: 256px;
+  background: url("../img/statistics/curtain.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.statistics__range-field::-moz-range-thumb {
+  width: 40px;
+  height: 256px;
+  background: url("../img/statistics/curtain.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.statistics__image-cat--fat {
+  margin-left: 10px;
+  margin-top: -15px;
+}
+
+.statistics__image-cat--skinny {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  z-index: -1;
+}
+
+@media (min-width: @tablet-width) {
+  .statistics {
+    background-color: var(--color-special-white);
+    width: 768px;
+  }
+
+  .statistics__container {
+    height: 1038px;
+  }
+
+  .statistics__wrapper {
+    max-width: 708px;
+    justify-content: left;
+    margin-bottom: 255px;
+  }
+
+  .statistics__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0;
+    margin-bottom: 63px;
+  }
+
+  .statistics__description {
+    font-size: 16px;
+    line-height: 24px;
+    width: 700px;
+    margin: 0;
+    margin-bottom: 54px;
+  }
+
+  .statistics__list {
+    margin: 0;
+    margin-right: 68px;
+  }
+
+  .statistics__item {
+    position: relative;
+  }
+
+  .statistics__item-number {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .statistics__item-number--weight {
+    padding: 15px 57px 20px 57px;
+  }
+
+  .statistics__item-number--days {
+    padding: 15px 30px 20px 30px;
+  }
+
+  .statistics__item-description {
+    font-size: 14px;
+    line-height: 14px;
+    background-color: var(--color-basic-white);
+  }
+
+  .statistics__item-description br {
+    content: " ";
+  }
+
+  .statistics__item-description--weight {
+    width: 114px;
+    height: 14px;
+    position: absolute;
+    left: 20px;
+    top: 65px;
+  }
+
+  .statistics__item-description--days {
+    width: 142px;
+    height: 14px;
+    position: absolute;
+    left: 5px;
+    top: 65px;
+  }
+
+  .statistics__sum {
+    width: 174px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+    margin: 0;
+    margin-top: 11px;
+    margin-left: 50px;
+  }
+
+  .statistics__form {
+    background-color: var(--color-special_grey-4);
+    width: 768px;
+    height: 462px;
+  }
+
+  .statistics__range-field {
+    -webkit-appearance: none;
+    width: 600px;
+    height: 4px;
+    background: transparent;
+    position: absolute;
+    left: 80px;
+    top: 80px;
+  }
+
+  .statistics__range-field::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 40px;
+    height: 512px;
+    background: url("../img/statistics/curtain-tablet.svg");
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+  .statistics__range-field::-moz-range-thumb {
+    width: 40px;
+    height: 512px;
+    background: url("../img/statistics/curtain-tablet.svg");
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+  .statistics__image-cat--fat {
+    margin-left: 100px;
+    margin-top: -170px;
+  }
+
+  .statistics__image-cat--skinny {
+    position: absolute;
+    top: -170px;
+    right: 90px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .statistics {
+    background-color: var(--color-basic_grey);
+    width: 1440px;
+    height: 462px;
+  }
+
+  .statistics__container {
+    max-width: 1220px;
+    display: flex;
+    height: auto;
+  }
+
+  .statistics__wrapper {
+    max-width: 436px;
+    position: relative;
+    margin-left: 110px;
+    justify-content: left;
+  }
+
+  .statistics__title {
+    position: absolute;
+    top: -136px;
+  }
+
+  .statistics__description {
+    margin: 70px 0 69px 0;
+  }
+
+  .statistics__list {
+    margin: 0 42px 0 0;
+  }
+
+  .statistics__item-description {
+    background-color: var(--color-basic_grey);
+  }
+
+  .statistics__sum {
+    text-align: justify;
+    min-width: 327px;
+    margin: 60px 0 0 0;
+  }
+
+  .statistics__sum span {
+    float: right;
+  }
+
+  .statistics__form {
+    background-color: var(--color-basic_grey);
+  }
+
+  .statistics__range-field {
+    -webkit-appearance: none;
+    left: 170px;
+    top: 115px;
+  }
+
+  .statistics__image-cat--fat {
+    margin-left: 190px;
+    margin-top: -140px;
+  }
+
+  .statistics__image-cat--skinny {
+    position: absolute;
+    top: -135px;
+    right: 0;
+  }
+}

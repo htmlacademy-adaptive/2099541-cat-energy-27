@@ -1,0 +1,36 @@
+.primary-container {
+  width: 320px;
+}
+
+.primary-container__title {
+  font-family: "oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  margin: 27px 0 41px 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .primary-container {
+    width: 768px;
+  }
+
+  .primary-container__title {
+    max-width: 708px;
+    font-size: 60px;
+    line-height: 60px;
+    margin: 64px 0 165px 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .primary-container {
+    width: 1440px;
+  }
+
+  .primary-container__title {
+    max-width: 1220px;
+    margin: 74px 0 165px 110px;
+  }
+}

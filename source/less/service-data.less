@@ -1,0 +1,124 @@
+.service-data {
+  width: 320px;
+  margin: 0;
+  border: none;
+  padding: 0;
+  border-bottom: 1px solid var(--color-special_grey-7);
+}
+
+.service-data__container {
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.service-data__item:not(:last-child) {
+  margin-bottom: 13px;
+}
+
+.service-data__item:last-child {
+  margin-bottom: 19px;
+}
+
+.service-data__name {
+  font-family: "oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--color-special_dark-grey-2);
+  display: block;
+  margin-top: 8px;
+}
+
+.service-data__label {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service-data__mark {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--color-special_grey-2);
+  margin-right: 18px;
+}
+
+.service-data__input[type="radio"] + .service-data__mark {
+  border-radius: 50%;
+}
+
+.service-data__input[type="radio"]:checked + .service-data__mark::before {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  content: url("../img/service/mobile/radiobutton_active_mobile.svg");
+}
+
+@media (min-width: @tablet-width) {
+  .service-data {
+    width: 768px;
+    height: 196px;
+    border: none;
+    margin-bottom: 75px;
+  }
+
+  .service-data__container {
+    max-width: 630px;
+    height: 196px;
+    margin: 0;
+    border: 1px solid var(--color-special_grey-5);
+  }
+
+  .service-data__list {
+    margin-top: 20px;
+    vertical-align: middle;
+  }
+
+  .service-data__item:first-child {
+    margin-top: 25px;
+  }
+
+  .service-data__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .service-data__item {
+    margin-bottom: 23px;
+    margin-left: 28px;
+  }
+
+  .service-data__mark {
+    width: 38px;
+    height: 38px;
+  }
+
+  .service-data__input[type="radio"]:checked + .service-data__mark::before {
+    top: 11px;
+    left: 10px;
+    content: url("../img/service/tablet/radiobutton_active_tablet.svg");
+  }
+
+  .service-data__name {
+    max-width: 630px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 5px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .service-data {
+    position: absolute;
+    left: 768px;
+    top: 406px;
+    width: 570px;
+    height: 196px;
+    margin: 0;
+  }
+
+  .service-data__container {
+    max-width: 570px;
+  }
+}

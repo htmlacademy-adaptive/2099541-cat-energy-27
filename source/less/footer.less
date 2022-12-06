@@ -1,0 +1,38 @@
+.footer {
+  width: 320px;
+  height: 236px;
+  background-color: var(--color-basic_grey);
+}
+
+.footer__container {
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .footer {
+    width: 768px;
+    height: 147px;
+  }
+
+  .footer__container {
+    max-width: 708px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .footer {
+    width: 1440px;
+    height: 147px;
+  }
+
+  .footer__container {
+    max-width: 1220px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
