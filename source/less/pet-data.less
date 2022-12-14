@@ -56,6 +56,10 @@
   padding-left: 19px;
 }
 
+.pet-data__input:invalid {
+  border: 2px solid var(--color-status_error);
+}
+
 .pet-data__input--name {
   width: 210px;
 }
@@ -145,6 +149,14 @@
     justify-content: left;
     width: 630px;
     height: 52px;
+  }
+
+  .pet-data__input:hover {
+    border: 1px solid var(--color-special_grey-2);
+  }
+
+  .pet-data__input:focus {
+    border: 2px solid var(--color-special_dark-grey);
   }
 
   .pet-data__input--name {

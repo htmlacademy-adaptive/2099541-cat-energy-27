@@ -13,6 +13,11 @@
   margin-right: 24px;
 }
 
+.socials__website:active path {
+  fill: var(--color-basic_green);
+  opacity: 0.3;
+}
+
 @media (min-width: @tablet-width) {
   .socials {
     min-width: 132px;
@@ -27,5 +32,13 @@
 @media (min-width: @desktop-width) {
   .socials {
     min-width: 132px;
+  }
+
+  .socials__website:hover path {
+    fill: var(--color-basic_green);
+  }
+
+  .socials__website:active {
+    opacity: 0.3;
   }
 }
