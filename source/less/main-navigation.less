@@ -59,6 +59,10 @@
   text-transform: uppercase;
 }
 
+.main-navigation__link:active {
+  opacity: 0.3;
+}
+
 @media (max-width: @mobile-width-only) {
   .main-navigation--closed .main-navigation__list-item {
     display: none;
@@ -167,6 +171,14 @@
 
   .main-navigation__list-item--current-green-white {
     border-bottom: 2px solid var(--color-basic-white);
+  }
+
+  .main-navigation__link:hover {
+    opacity: 0.6;
+  }
+
+  .main-navigation__link:active {
+    opacity: 0.3;
   }
 
   .main-navigation__link--white-font {

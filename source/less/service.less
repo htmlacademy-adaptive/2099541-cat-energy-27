@@ -77,9 +77,13 @@
   padding: 10px 10px 10px 0;
 }
 
+.service__link:active {
+  opacity: 0.3;
+}
+
 .service__link::after {
   content: url("../img/service/mobile/arrow.svg");
-  padding-left: 17px;
+  padding-left: 15px;
 }
 
 @media (min-width: @tablet-width) {
@@ -151,7 +155,7 @@
 
   .service__link::after {
     content: url("../img/service/tablet/icon_arrow.svg");
-    margin-left: 25px;
+    padding-left: 25px;
   }
 }
 
@@ -202,5 +206,9 @@
     min-width: 467px;
     margin-left: 53px;
     padding: 0 0 27px 0;
+  }
+
+  .service__link:hover::after {
+    content: url("../img/service/tablet/icon_arrow_hover.svg");
   }
 }

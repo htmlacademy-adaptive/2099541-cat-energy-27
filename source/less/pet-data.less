@@ -52,20 +52,23 @@
   line-height: 18px;
 }
 
-.pet-data__input:placeholder-shown {
-  padding-left: 19px;
+.pet-data__input:invalid {
+  border: 2px solid var(--color-status_error);
 }
 
 .pet-data__input--name {
-  width: 210px;
+  width: 208px;
+  padding-left: 19px;
 }
 
 .pet-data__input--weight {
-  width: 185px;
+  width: 187px;
+  padding-left: 19px;
 }
 
 .pet-data__input--age {
   width: 153px;
+  padding-left: 19px;
 }
 
 @media (min-width: @tablet-width) {
@@ -82,7 +85,6 @@
   }
 
   .pet-data__item {
-    display: flex;
     width: 630px;
     height: 52px;
   }
@@ -98,7 +100,6 @@
   .pet-data__label {
     font-size: 20px;
     line-height: 30px;
-    margin-right: 14px;
   }
 
   .pet-data__input {
@@ -114,15 +115,15 @@
   }
 
   .pet-data__input--name {
-    width: 548px;
+    width: 550px;
   }
 
   .pet-data__input--weight {
-    width: 520px;
+    width: 522px;
   }
 
   .pet-data__input--age {
-    width: 479px;
+    width: 480px;
   }
 }
 
@@ -141,21 +142,27 @@
   }
 
   .pet-data__item {
-    display: flex;
-    justify-content: left;
-    width: 630px;
+    width: 569px;
     height: 52px;
   }
 
+  .pet-data__input:hover {
+    border: 1px solid var(--color-special_grey-2);
+  }
+
+  .pet-data__input:focus {
+    border: 2px solid var(--color-special_dark-grey);
+  }
+
   .pet-data__input--name {
-    width: 488px;
+    width: 489px;
   }
 
   .pet-data__input--weight {
-    width: 460px;
+    width: 461px;
   }
 
   .pet-data__input--age {
-    width: 420px;
+    width: 419px;
   }
 }

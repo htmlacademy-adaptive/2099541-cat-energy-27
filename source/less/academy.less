@@ -10,6 +10,10 @@
   text-decoration: none;
 }
 
+.academy-container:active {
+  opacity: 0.3;
+}
+
 @media (min-width: @tablet-width) {
   .academy {
     max-width: 163px;
@@ -19,5 +23,9 @@
 @media (min-width: @desktop-width) {
   .academy {
     max-width: 163px;
+  }
+
+  .academy__link:hover + svg path {
+    fill: var(--color-basic_green);
   }
 }

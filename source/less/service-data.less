@@ -37,6 +37,10 @@
   flex-wrap: wrap;
 }
 
+.service-data__label:disabled {
+  opacity: 0.3;
+}
+
 .service-data__mark {
   display: inline-block;
   width: 28px;
@@ -120,5 +124,13 @@
 
   .service-data__container {
     max-width: 570px;
+  }
+
+  .service-data__item:disabled {
+    opacity: 0.3;
+  }
+
+  .service-data__mark:hover {
+    border: 1px solid var(--color-special_grey-8);
   }
 }
