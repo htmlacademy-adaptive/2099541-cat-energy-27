@@ -7,6 +7,26 @@
   margin-bottom: 21px;
 }
 
+.send-information__button--green-button {
+  width: 280px;
+  height: 40px;
+  background-color: var(--color-basic_green);
+  font-family: "oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--color-basic-white);
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 0;
+}
+
+.send-information__button--green-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .send-information__about {
   text-align: center;
   margin: 0;
@@ -23,6 +43,13 @@
     margin: 0 61px 0 0;
   }
 
+  .send-information__button--green-button {
+    width: 282px;
+    height: 52px;
+    font-size: 20px;
+    line-height: 0px;
+  }
+
   .send-information__about {
     margin-top: 15px;
   }
@@ -35,5 +62,13 @@
 
   .send-information__button {
     margin: 0 82px 0 0;
+  }
+
+  .send-information__button--green-button {
+    width: 568px;
+  }
+
+  .send-information__button--green-button:hover {
+    background-color: var(--color-basic_green-2);
   }
 }
