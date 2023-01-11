@@ -72,16 +72,18 @@
   outline: 2px solid var(--color-special_dark-grey);
 }
 
-.owner-data__wrapper:focus-within path {
+.owner-data__wrapper:focus-within .owner-data__input-icon {
   stroke: var(--color-basic_green);
+  outline: 0 solid var(--color-basic_green);
 }
 
 .owner-data__wrapper:invalid {
   outline: 2px solid var(--color-status_error);
 }
 
-.owner-data__wrapper:invalid path {
+.owner-data__wrapper:invalid .owner-data__input-icon {
   stroke: var(--color-status_error);
+  outline: 0 solid var(--color-status_error);
 }
 
 .owner-data__input {
@@ -103,6 +105,11 @@
 .owner-data__input--phone {
   width: 135px;
   padding: 16px 12px 0 15px;
+}
+
+.owner-data__input-icon {
+  fill: none;
+  stroke: var(--color-basic-black);
 }
 
 @media (min-width: @tablet-width) {
@@ -250,8 +257,9 @@
     outline: 2px solid var(--color-status_error);
   }
 
-  .owner-data__wrapper:invalid path {
+  .owner-data__wrapper:invalid .owner-data__input-icon {
     stroke: var(--color-status_error);
+    outline: 0 solid var(--color-status_error);
   }
 
   .owner-data__input--mail {

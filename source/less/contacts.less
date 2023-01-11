@@ -30,8 +30,9 @@
   color: var(--color-special_dark-grey);
 }
 
-.contacts__map {
+.contacts iframe {
   display: block;
+  border: 0;
 }
 
 @media (max-width: @mobile-width-only) {
@@ -63,6 +64,10 @@
     line-height: 20px;
     text-align: right;
     margin: 0 40px 0 0;
+  }
+
+  .contacts iframe {
+    height: 400px;
   }
 }
 
