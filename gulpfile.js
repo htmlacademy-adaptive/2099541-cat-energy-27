@@ -1,5 +1,6 @@
 import gulp from "gulp";
 import plumber from "gulp-plumber";
+import sourceMap from "gulp-sourcemaps";
 import less from "gulp-less";
 import postcss from "gulp-postcss";
 import csso from "postcss-csso";
@@ -10,9 +11,9 @@ import htmlmin from "gulp-htmlmin";
 import terser from "gulp-terser";
 import gulpSquoosh from "gulp-squoosh";
 import libSquoosh from "gulp-libsquoosh";
-import GulpClient from "gulp";
 import svgo from "gulp-svgo";
 import svgostore from "svgstore";
+import {deleteAsync as del} from 'del';
 
 // Styles
 
@@ -70,8 +71,7 @@ const createWebp = () => {
 const optimizeSvg = () => {
   return gulp.src([
       "source/img/**/*.svg",
-      "!source/img/owner-data/*.svg",
-      "!source/img/socials/*.svg"
+      "!source/img/icons/*.svg"
     ])
     .pipe(svgo())
     .pipe(gulp.dest("build/img"));
@@ -79,14 +79,25 @@ const optimizeSvg = () => {
 
 //Sprite
 export const sprite = () => {
-  return gulp.src([
-    "source/img/owner-data/*.svg",
-    "source/img/socials/*.svg"
-  ])
+  return gulp.src("source/img/icons/*.svg")
   .pipe(svgo())
   .pipe(svgostore({inlineSvg: true}))
   .pipe(rename("sprite.svg"))
   .pipe(gulp.dest("build/img"));
+};
+
+//Copy
+const copy = (done) => {
+  gulp.src(["source/fonts/**/*.{woff2,woff}", "source/*.ico"],
+  {base: "source"}
+  )
+  .pipe(gulp.dest("build"))
+  done();
+};
+
+//Clean
+const clean = () => {
+  return del("build")
 };
 
 // Server
@@ -110,4 +121,34 @@ const watcher = () => {
   gulp.watch("source/*.html").on("change", browser.reload);
 };
 
-export default gulp.series(html, styles, server, watcher);
+//Build
+const build = gulp.series(
+  clean,
+  copy,
+  optimizeImages,
+  gulp.parallel(
+    styles,
+    html,
+    scripts,
+    optimizeSvg,
+    sprite,
+    createWebp
+  ),
+);
+
+export default gulp.series(
+  clean,
+  copy,
+  copyImages,
+  gulp.parallel(
+    styles,
+    html,
+    scripts,
+    optimizeSvg,
+    sprite,
+    createWebp
+  ),
+  gulp.series(
+    server,
+    watcher
+  ));
