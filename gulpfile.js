@@ -12,7 +12,7 @@ import terser from "gulp-terser";
 import gulpSquoosh from "gulp-squoosh";
 import libSquoosh from "gulp-libsquoosh";
 import svgo from "gulp-svgo";
-import svgostore from "svgstore";
+import svgostore from "gulp-svgstore";
 import {deleteAsync as del} from 'del';
 
 // Styles
@@ -78,7 +78,7 @@ const optimizeSvg = () => {
 };
 
 //Sprite
-export const sprite = () => {
+const sprite = () => {
   return gulp.src("source/img/icons/*.svg")
   .pipe(svgo())
   .pipe(svgostore({inlineSvg: true}))
