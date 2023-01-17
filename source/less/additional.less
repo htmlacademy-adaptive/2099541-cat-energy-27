@@ -55,11 +55,16 @@
   margin-right: 16px;
 }
 
+.additional__mark::before {
+  width: 19px;
+  height: 15px;
+}
+
 .additional__input[type="checkbox"]:checked + .additional__mark::before {
   position: absolute;
   top: 8px;
   left: 6px;
-  content: url("../img/sprite.svg#icon-checkbox_mobile");
+  content: url("../img/sprite.svg#checkbox_active_mobile");
 }
 
 .additional__text {
@@ -137,7 +142,7 @@
     position: absolute;
     top: 10px;
     left: 8px;
-    content: url("../img/sprite.svg#icon-checkbox_tablet");
+    content: url("../img/sprite.svg#checkbox_active_tablet");
   }
 
   .additional__text {
@@ -200,5 +205,10 @@
 
   .additional__mark:hover {
     border: 1px solid var(--color-special_grey-8);
+  }
+
+  .additional__mark::before {
+    width: 24px;
+    height: 19px;
   }
 }
