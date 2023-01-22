@@ -60,16 +60,26 @@
 
 .statistics__item-description {
   position: absolute;
-  width: 87px;
-  height: 31px;
-  bottom: -25px;
-  left: 15px;
   text-align: center;
   font-size: 12px;
   line-height: 100%;
   color: var(--color-special_dark-grey);
   background-color: var(--color-special_grey-4);
   margin: 0;
+}
+
+.statistics__item-description--weight {
+  width: 77px;
+  height: 31px;
+  left: 20px;
+  top: 47px;
+}
+
+.statistics__item-description--days {
+  width: 87px;
+  height: 31px;
+  left: 15px;
+  top: 47px;
 }
 
 .statistics__sum {
@@ -195,23 +205,17 @@
     background-color: var(--color-basic-white);
   }
 
-  .statistics__item-description br {
-    content: " ";
-  }
-
   .statistics__item-description--weight {
     width: 114px;
     height: 14px;
-    position: absolute;
     left: 20px;
-    top: 65px;
+    top: 64px;
   }
 
   .statistics__item-description--days {
     width: 142px;
     height: 14px;
-    position: absolute;
-    left: 5px;
+    left: 6px;
     top: 65px;
   }
 

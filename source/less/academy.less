@@ -3,15 +3,19 @@
   height: 78px;
 }
 
+.academy-container:active {
+  opacity: 0.3;
+}
+
 .academy__link {
   font-size: 16px;
   line-height: 18px;
   color: var(--color-special_dark-grey);
   text-decoration: none;
-}
-
-.academy-container:active {
-  opacity: 0.3;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 @media (min-width: @tablet-width) {
@@ -21,11 +25,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .academy {
-    max-width: 163px;
-  }
-
-  .academy__link:hover + .academy__icon {
+  .academy__link:hover .academy__icon {
     fill: var(--color-basic_green);
   }
 }
