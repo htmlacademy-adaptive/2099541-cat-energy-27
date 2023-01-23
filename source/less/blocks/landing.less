@@ -198,7 +198,7 @@
   .landing__background::after {
     background-image: url("../img/landing/desktop/landing-background-image-desktop@1x.png");
     content: "";
-    position: inherit;
+    position: absolute;
     top: 0;
     right: 0;
     width: 720px;
@@ -209,11 +209,12 @@
     .landing__background::after {
       background-image: url("../img/landing/desktop/landing-background-image-desktop-retina.png");
       content: "";
-      position: inherit;
+      position: absolute;
       top: 0;
       right: 0;
       width: 720px;
       height: 694px;
+      z-index: 100;
     }
   }
 }
