@@ -1,6 +1,18 @@
 .main-header {
   width: 320px;
-  height: 66px;
+  max-height: 264px;
+  margin: 0 auto;
+}
+
+.main-header .main-navigation--opened {
+  max-height: 66px;
+  z-index: 1;
+}
+
+.main-header__logo--image {
+  margin-left: -85px;
+  margin-right: 55px;
+  padding-bottom: 10px;
 }
 
 .main-header__logo--image:active {
@@ -8,7 +20,6 @@
 }
 
 .main-header__logo--text {
-  margin-left: -30px;
   margin-top: 10px;
 }
 
@@ -16,6 +27,10 @@
   .main-header {
     width: 768px;
     height: 77px;
+  }
+
+  .main-header__logo--image {
+    margin: 0;
   }
 
   .main-header__logo--image:active {

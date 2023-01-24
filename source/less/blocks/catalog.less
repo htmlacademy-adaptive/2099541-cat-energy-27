@@ -76,7 +76,7 @@
 
 .catalog__item-button--green-button {
   width: 280px;
-  height: 40px;
+  block-size: 20px;
   background-color: var(--color-basic_green);
   font-family: "oswald", sans-serif;
   font-style: normal;
@@ -87,7 +87,10 @@
   border: none;
   cursor: pointer;
   text-transform: uppercase;
-  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px 0 10px 0;
 }
 
 .catalog__item-button--green-button:active {
@@ -95,8 +98,9 @@
 }
 
 .catalog__item-button--grey-button {
+  display: block;
   width: 280px;
-  height: 40px;
+  block-size: 20px;
   background-color: var(--color-basic_grey);
   font-family: "oswald", sans-serif;
   font-style: normal;
@@ -106,8 +110,10 @@
   color: var(--color-special_dark-grey);
   border: none;
   cursor: pointer;
-  padding: 0;
   text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 0 10px 0;
 }
 
 .catalog__item-button--grey-button:active {
@@ -233,7 +239,6 @@
 
   .catalog__item-button--grey-button {
     width: 248px;
-    line-height: 0px;
   }
 
   .catalog__item-button--show-more {
