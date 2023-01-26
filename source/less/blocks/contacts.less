@@ -2,6 +2,22 @@
   width: 320px;
   height: 474px;
   background-color: var(--color-basic-white);
+  position: relative;
+}
+
+.contacts-background-gray::after {
+  display: block;
+  content: "";
+  background-color: var(--color-basic_grey);
+  width: 100vw;
+  height: 112px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  z-index: -2;
 }
 
 .contacts__container {
@@ -44,6 +60,10 @@
     height: 599px;
   }
 
+  .contacts-background-gray::after {
+    height: 199px;
+  }
+
   .contacts__container {
     max-width: 708px;
     height: 199px;
@@ -71,6 +91,7 @@
   }
 
   .contacts iframe {
+    width: 100vw;
     height: 400px;
   }
 }
@@ -80,6 +101,10 @@
     width: 1440px;
     height: 400px;
     position: relative;
+  }
+
+  .contacts-background-gray::after {
+    display: none;
   }
 
   .contacts__container {
