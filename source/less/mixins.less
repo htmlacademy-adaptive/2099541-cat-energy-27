@@ -1,3 +1,20 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Lato", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  min-width: 320px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: 0;
+  overflow-x: hidden;
+}
+
 .visually-hidden() {
   position: absolute;
   width: 1px;
@@ -11,10 +28,18 @@
   overflow: hidden;
 }
 
+.visually-hidden {
+  .visually-hidden();
+}
+
 .reset-list() {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.reset-list {
+  .reset-list();
 }
 
 input::placeholder {
@@ -35,4 +60,18 @@ textarea::placeholder {
   line-height: 18px;
   text-transform: uppercase;
   color: var(--color-special_dark-grey);
+}
+
+@media (min-width: @tablet-width) {
+  body {
+    min-width: 768px;
+    overflow-x: hidden;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  body {
+    min-width: 1440px;
+    overflow-x: hidden;
+  }
 }

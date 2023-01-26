@@ -93,7 +93,7 @@ const copy = (done) => {
 };
 
 //Clean
-const clean = () => {
+export const clean = () => {
   return del("build")
 };
 
@@ -119,7 +119,7 @@ const watcher = () => {
 };
 
 //Build
-const build = gulp.series(
+export const build = gulp.series(
   clean,
   copy,
   optimizeImages,

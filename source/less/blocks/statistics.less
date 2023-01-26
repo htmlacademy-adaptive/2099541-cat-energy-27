@@ -1,6 +1,22 @@
 .statistics {
   background-color: var(--color-special_grey-4);
   width: 320px;
+  position: relative;
+}
+
+.statistics::after {
+  display: block;
+  content: "";
+  background-color: var(--color-special_grey-4);
+  width: 100vw;
+  height: 659px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  z-index: -2;
 }
 
 .statistics__container {
@@ -48,6 +64,7 @@
   font-size: 24px;
   line-height: 24px;
   color: var(--color-basic-black);
+  text-transform: uppercase;
 }
 
 .statistics__item-number--weight {
@@ -60,16 +77,26 @@
 
 .statistics__item-description {
   position: absolute;
-  width: 87px;
-  height: 31px;
-  bottom: -25px;
-  left: 15px;
   text-align: center;
   font-size: 12px;
   line-height: 100%;
   color: var(--color-special_dark-grey);
   background-color: var(--color-special_grey-4);
   margin: 0;
+}
+
+.statistics__item-description--weight {
+  width: 77px;
+  height: 31px;
+  left: 20px;
+  top: 47px;
+}
+
+.statistics__item-description--days {
+  width: 87px;
+  height: 31px;
+  left: 15px;
+  top: 47px;
 }
 
 .statistics__sum {
@@ -87,6 +114,7 @@
 .statistics__group {
   position: relative;
   border: none;
+  margin: 0;
 }
 
 .statistics__range-field {
@@ -142,6 +170,11 @@
     width: 768px;
   }
 
+  .statistics::after {
+    height: 462px;
+    bottom: -2px;
+  }
+
   .statistics__container {
     height: 1038px;
   }
@@ -195,23 +228,17 @@
     background-color: var(--color-basic-white);
   }
 
-  .statistics__item-description br {
-    content: " ";
-  }
-
   .statistics__item-description--weight {
     width: 114px;
     height: 14px;
-    position: absolute;
-    left: 20px;
-    top: 65px;
+    left: 21px;
+    top: 64px;
   }
 
   .statistics__item-description--days {
     width: 142px;
     height: 14px;
-    position: absolute;
-    left: 5px;
+    left: 10px;
     top: 65px;
   }
 
@@ -285,6 +312,11 @@
     height: 462px;
   }
 
+  .statistics::after {
+    background-color: var(--color-basic_grey);
+    bottom: 0;
+  }
+
   .statistics__container {
     max-width: 1220px;
     display: flex;
@@ -316,13 +348,13 @@
   }
 
   .statistics__sum {
-    text-align: justify;
+    text-align: left;
     min-width: 327px;
     margin: 60px 0 0 0;
   }
 
   .statistics__sum span {
-    float: right;
+    padding-left: 60px;
   }
 
   .statistics__form {
