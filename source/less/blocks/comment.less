@@ -19,17 +19,18 @@
   position: relative;
   margin: 0 0 38px 20px;
   padding: 0;
-  width: 280px;
+  width: 121px;
 }
 
 .comment__title::after {
   content: "";
-  display: block;
-  width: 158px;
   position: absolute;
-  right: -20px;
-  top: 15px;
+  top: 50%;
+  width: 10000px;
   border: 2px solid var(--color-basic_green);
+  background-color: var(--color-basic_green);
+  z-index: -1;
+  left: calc(100% + 22px);
 }
 
 .comment__input {
@@ -63,26 +64,23 @@
     font-size: 36px;
     line-height: 36px;
     margin: 0 0 76px 0;
+    width: 182px;
   }
 
   .comment__title::before {
     content: "";
-    display: block;
-    width: 30px;
     position: absolute;
-    left: -79px;
-    top: 20px;
+    top: 50%;
+    width: 10000px;
     border: 2px solid var(--color-basic_green);
+    background-color: var(--color-basic_green);
+    z-index: -1;
+    right: calc(100% + 40px);
   }
 
   .comment__title::after {
     content: "";
-    display: block;
-    width: 478px;
-    position: absolute;
-    left: 220px;
-    top: 20px;
-    border: 2px solid var(--color-basic_green);
+    left: calc(100% + 40px);
   }
 
   .comment__item {
@@ -120,13 +118,13 @@
   }
 
   .comment__title::before {
-    width: 70px;
-    left: -110px;
+    content: "";
+    right: calc(100% + 40px);
   }
 
   .comment__title::after {
-    width: 1108px;
-    left: 222px;
+    content: "";
+    left: calc(100% + 40px);
   }
 
   .comment__list {

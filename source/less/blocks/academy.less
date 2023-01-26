@@ -14,13 +14,22 @@
   justify-content: space-between;
 }
 
+.academy__icon {
+  fill: var(--color-special_grey-3);
+}
+
 @media (min-width: @tablet-width) {
   .academy {
     max-width: 163px;
+    height: 147px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .academy {
+    height: 169px;
+  }
+
   .academy__link:hover .academy__icon {
     fill: var(--color-basic_green);
   }

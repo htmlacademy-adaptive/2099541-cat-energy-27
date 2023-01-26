@@ -13,6 +13,10 @@
   margin-right: 24px;
 }
 
+.socials__website-icon {
+  fill: var(--color-special_grey-3);
+}
+
 .socials__website-icon:active {
   fill: var(--color-basic_green);
   opacity: 0.3;
@@ -21,6 +25,7 @@
 @media (min-width: @tablet-width) {
   .socials {
     min-width: 132px;
+    height: 147px;
     border-bottom: none;
     margin-left: 50px;
   }
@@ -33,6 +38,11 @@
 @media (min-width: @desktop-width) {
   .socials {
     min-width: 132px;
+    height: 169px;
+  }
+
+  .socials__container {
+    padding: 72px 0 0 0;
   }
 
   .socials__website-icon:hover {

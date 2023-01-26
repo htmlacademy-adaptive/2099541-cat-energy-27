@@ -1,8 +1,24 @@
 .footer {
   width: 320px;
-  height: 236px;
+  height: 240px;
   background-color: var(--color-basic_grey);
   margin: 0 auto;
+  position: relative;
+}
+
+.footer::after {
+  display: block;
+  content: "";
+  background-color: var(--color-basic_grey);
+  width: 100vw;
+  height: 240px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  z-index: -2;
 }
 
 .footer__container {
@@ -13,6 +29,10 @@
 @media (min-width: @tablet-width) {
   .footer {
     width: 768px;
+    height: 147px;
+  }
+
+  .footer::after {
     height: 147px;
   }
 
@@ -27,11 +47,16 @@
 @media (min-width: @desktop-width) {
   .footer {
     width: 1440px;
-    height: 147px;
+    height: 169px;
+  }
+
+  .footer::after {
+    height: 169px;
   }
 
   .footer__container {
     max-width: 1220px;
+    height: 169px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

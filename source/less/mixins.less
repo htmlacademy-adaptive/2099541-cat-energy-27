@@ -12,6 +12,7 @@ body {
   flex-direction: column;
   box-sizing: border-box;
   margin: 0;
+  overflow-x: hidden;
 }
 
 .visually-hidden() {
@@ -61,15 +62,16 @@ textarea::placeholder {
   color: var(--color-special_dark-grey);
 }
 
-
 @media (min-width: @tablet-width) {
   body {
     min-width: 768px;
+    overflow-x: hidden;
   }
 }
 
 @media (min-width: @desktop-width) {
   body {
     min-width: 1440px;
+    overflow-x: hidden;
   }
 }

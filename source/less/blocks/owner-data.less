@@ -3,6 +3,7 @@
   margin: 26px 0 23px 0;
   padding: 0;
   border: none;
+  overflow-x: visible;
 }
 
 .owner-data__container {
@@ -24,12 +25,13 @@
 
 .owner-data__title::after {
   content: "";
-  display: block;
-  width: 99px;
   position: absolute;
-  left: 197px;
-  top: 15px;
+  top: 50%;
+  width: 10000px;
   border: 2px solid var(--color-basic_green);
+  background-color: var(--color-basic_green);
+  z-index: -1;
+  left: calc(100% + 14px);
 }
 
 .owner-data__item {
@@ -136,22 +138,18 @@
 
   .owner-data__title::before {
     content: "";
-    display: block;
-    width: 30px;
     position: absolute;
-    left: -79px;
-    top: 23px;
+    top: 50%;
+    width: 10000px;
     border: 2px solid var(--color-basic_green);
+    background-color: var(--color-basic_green);
+    z-index: -1;
+    right: calc(100% + 40px);
   }
 
   .owner-data__title::after {
     content: "";
-    display: block;
-    width: 145px;
-    position: absolute;
-    left: 554px;
-    top: 23px;
-    border: 2px solid var(--color-basic_green);
+    left: calc(100% + 39px);
   }
 
   .owner-data__item:not(:last-child) {
@@ -211,22 +209,12 @@
 
   .owner-data__title::before {
     content: "";
-    display: block;
-    width: 70px;
-    position: absolute;
-    left: -110px;
-    top: 20px;
-    border: 2px solid var(--color-basic_green);
+    right: calc(100% + 40px);
   }
 
   .owner-data__title::after {
     content: "";
-    display: block;
-    width: 778px;
-    position: absolute;
-    left: 552px;
-    top: 23px;
-    border: 2px solid var(--color-basic_green);
+    left: calc(100% + 40px);
   }
 
   .owner-data__list {

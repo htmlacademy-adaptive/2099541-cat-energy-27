@@ -24,12 +24,21 @@
   .logo__container {
     padding: 63px 0 0 0;
   }
+}
+
+@media (min-width: @tablet-width) {
+  .logo {
+    min-width: auto;
+    height: 169px;
+    text-align: left;
+    border-bottom: none;
+  }
+
+  .logo__container {
+    padding: 73px 0 0 0;
+  }
 
   .logo__link:hover {
     opacity: 0.8;
-  }
-
-  .logo__link:active {
-    opacity: 0.6;
   }
 }
