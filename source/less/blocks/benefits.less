@@ -65,7 +65,7 @@
 @media (min-width: @tablet-width) {
   .benefits {
     width: 768px;
-    height: 781px;
+    height: 758px;
     border-bottom: 1px solid var(--color-special_grey-6);
     margin-bottom: 43px;
   }
@@ -88,7 +88,7 @@
   .benefits__list {
     display: grid;
     grid-template-columns: repeat(2, 230px);
-    gap: 137px 157px;
+    gap: 135px 157px;
     counter-reset: section;
   }
 
@@ -126,8 +126,8 @@
 
   .benefits__item--serial-number::after {
     position: absolute;
-    top: -40px;
-    left: 117px;
+    top: -39px;
+    left: 114px;
     counter-increment: section;
     content: "" counter(section);
     font-family: "oswald", sans-serif;
@@ -143,9 +143,10 @@
     font-size: 16px;
     line-height: 24px;
     color: var(--color-special_dark-grey);
-    padding: 31px 0 0 0;
+    padding: 29px 0 0 1px;
     min-width: 245px;
     margin: 0;
+    margin-left: -3px;
   }
 
   .benefits__indent {
