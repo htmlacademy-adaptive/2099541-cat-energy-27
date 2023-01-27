@@ -166,7 +166,7 @@
 @media (min-width: @desktop-width) {
   .service {
     width: 1440px;
-    margin-top: 82px;
+    margin-top: 78px;
   }
 
   .service__container {
@@ -174,6 +174,7 @@
   }
 
   .service__list {
+    width: auto;
     display: flex;
     justify-content: space-between;
   }
@@ -203,16 +204,25 @@
 
   .service__title {
     text-align: center;
-    padding: 77px 0 73px 53px;
+    padding: 77px 0 73px 1px;
+    margin-left: 20px;
+  }
+
+  .service__title--pro {
+    padding-left: 40px;
   }
 
   .service__description {
     min-width: 467px;
-    margin-left: 53px;
+    margin-left: 51px;
     padding: 0 0 27px 0;
   }
 
   .service__link:hover::after {
     content: url("../img/service/tablet/icon_arrow_hover.svg");
+  }
+
+  .service__link {
+    margin-left: 52px;
   }
 }
