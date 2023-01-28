@@ -1,6 +1,20 @@
 .additional-catalog {
-  width: 320px;
-  overflow-x: visible;
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.additional-catalog::before {
+  content: "";
+  position: absolute;
+  top: 37px;
+  width: 100%;
+  right: 0;
+  border: 2px solid var(--color-basic_green);
+  background-color: var(--color-basic_green);
+  z-index: -1;
+  margin-right: -50vw;
 }
 
 .additional-catalog__container {
@@ -15,20 +29,10 @@
   font-size: 24px;
   line-height: 24px;
   position: relative;
+  background-color: var(--color-basic-white);
   display: inline-block;
-  margin: 25px 0 36px 0;
-}
-
-.additional-catalog__title::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  width: 100vw;
-  right: 0;
-  border: 2px solid var(--color-basic_green);
-  background-color: var(--color-basic_green);
-  z-index: -1;
-  left: calc(100% + 33px);
+  margin: 0;
+  padding: 25px 20px 36px 0;
 }
 
 .additional-catalog__item {
@@ -103,7 +107,12 @@
 
 @media (min-width: @tablet-width) {
   .additional-catalog {
-    width: 768px;
+    width: 100%;
+  }
+
+  .additional-catalog::before {
+    top: 90px;
+    margin: 0;
   }
 
   .additional-catalog__container {
@@ -113,22 +122,8 @@
   .additional-catalog__title {
     font-size: 36px;
     line-height: 36px;
-    margin: 68px 0 80px 36px;
-  }
-
-  .additional-catalog__title::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    width: 100vw;
-    border: 2px solid var(--color-basic_green);
-    background-color: var(--color-basic_green);
-    z-index: -1;
-    right: calc(100% + 36px);
-  }
-
-  .additional-catalog__title::after {
-    content: "";
+    margin: 68px 0 80px 0;
+    padding: 0 40px 0 40px;
   }
 
   .additional-catalog__list {
@@ -177,21 +172,22 @@
 
 @media (min-width: @desktop-width) {
   .additional-catalog {
-    width: 896px;
-    margin: 76px 0 80px  110px;
+    width: 100%;
+    margin: 76px auto 80px  auto;
+  }
+
+  .additional-catalog::before {
+    display: none;
   }
 
   .additional-catalog__container {
     max-width: 896px;
+    margin: 0;
   }
 
   .additional-catalog__title {
     margin: 0 0 80px 0;
-  }
-
-  .additional-catalog__title::before {
-    content: "";
-    right: calc(100% + 40px);
+    padding: 0 40px 0;
   }
 
   .additional-catalog__title::after {

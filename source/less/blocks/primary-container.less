@@ -1,5 +1,10 @@
 .primary-container {
-  width: 320px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.primary-container__wrapper {
+  max-width: 280px;
   margin: 0 auto;
 }
 
@@ -9,30 +14,38 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  margin: 27px 0 41px 20px;
+  margin: 27px 0 41px 0;
 }
 
 @media (min-width: @tablet-width) {
   .primary-container {
-    width: 768px;
+    width: 100%;
+  }
+
+  .primary-container__wrapper {
+    max-width: 708px;
   }
 
   .primary-container__title {
     max-width: 708px;
     font-size: 60px;
     line-height: 60px;
-    margin: 64px 0 165px 30px;
+    margin: 64px 0 165px 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .primary-container {
-    width: 1440px;
+    width: 100%;
     position: relative;
+  }
+
+  .primary-container__wrapper {
+    max-width: 1220px;
   }
 
   .primary-container__title {
     max-width: 1220px;
-    margin: 74px 0 165px 110px;
+    margin: 74px 0 165px 0;
   }
 }

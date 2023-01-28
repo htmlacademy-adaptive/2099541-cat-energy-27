@@ -1,6 +1,7 @@
 .contacts {
-  width: 320px;
+  width: 100%;
   height: 474px;
+  margin: 0 auto;
   background-color: var(--color-basic-white);
   position: relative;
 }
@@ -30,6 +31,13 @@
   align-items: center;
 }
 
+.contacts__wrapper {
+  width: 280px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .contacts__title {
   font-family: "oswald", sans-serif;
   font-style: normal;
@@ -39,6 +47,7 @@
   text-transform: uppercase;
   color: var(--color-basic-black-2);
   width: 139px;
+  white-space: break-spaces;
 }
 
 .contacts__text {
@@ -49,14 +58,14 @@
 }
 
 .contacts iframe {
-  display: block;
   width: 100%;
+  display: block;
   border: 0;
 }
 
 @media (min-width: @tablet-width) {
   .contacts {
-    width: 768px;
+    width: 100%;
     height: 599px;
   }
 
@@ -70,6 +79,10 @@
     align-content: center;
   }
 
+  .contacts__wrapper {
+    width: 708px;
+  }
+
   .contacts__title {
     margin: 0 0 0 40px;
     font-size: 20px;
@@ -81,7 +94,7 @@
     font-size: 16px;
     line-height: 20px;
     text-align: right;
-    margin: -10px 40px 0 0;
+    margin: 0 40px 0 0;
     width: 160px;
   }
 
@@ -91,16 +104,17 @@
   }
 
   .contacts iframe {
-    width: 100vw;
+    width: 100%;
     height: 400px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .contacts {
-    width: 1440px;
+    width: 100%;
     height: 400px;
     position: relative;
+    margin: 0 auto;
   }
 
   .contacts-background-gray::after {
@@ -108,22 +122,34 @@
   }
 
   .contacts__container {
+    max-width: 1220px;
+    height: 0;
+    position: absolute;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .contacts__wrapper {
     width: 565px;
     height: 198px;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     position: absolute;
     top: 95px;
-    left: 110px;
+    left: 0;
     background-color: var(--color-basic-white);
   }
 
   .contacts__title {
+    max-width: 163px;
     margin-left: 80px;
+    padding-top: 60px;
   }
 
   .contacts__text {
     text-align: left;
-    padding-top: 2px;
+    padding-top: 60px;
     margin-right: 75px;
   }
 }
