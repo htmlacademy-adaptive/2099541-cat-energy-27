@@ -1,9 +1,21 @@
 .additional {
-  width: 320px;
+  width: 100%;
   padding: 0;
-  margin: 0;
-  margin-bottom: 41px;
+  margin: 0 auto 41px auto;
   border: none;
+  position: relative;
+}
+
+.additional::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  width: 100%;
+  right: -25px;
+  border: 2px solid var(--color-basic_green);
+  background-color: var(--color-basic_green);
+  z-index: -1;
+  margin-right: -50vw;
 }
 
 .additional__container {
@@ -17,21 +29,10 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
-  margin: 0 0 34px 20px;
+  margin: 0 0 34px 0;
   position: relative;
   padding: 0;
   width: 141px;
-}
-
-.additional__title::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  width: 100vw;
-  border: 2px solid var(--color-basic_green);
-  background-color: var(--color-basic_green);
-  z-index: -1;
-  left: calc(100% + 23px);
 }
 
 .additional__item:not(:last-child) {
@@ -82,39 +83,32 @@
 
 @media (min-width: @tablet-width) {
   .additional {
-    width: 768px;
+    width: 100%;
     height: 259px;
     padding: 0;
     margin: 0;
     border: none;
   }
 
+  .additional::before {
+    top: 20px;
+    margin: 0;
+    right: 0;
+  }
+
   .additional__container {
     max-width: 630px;
-    margin: 0;
+    margin: 0 auto;
   }
 
   .additional__title {
     font-size: 36px;
     line-height: 36px;
-    margin: 0 0 57px 0;
+    margin-bottom: 57px;
     width: 212px;
-  }
-
-  .additional__title::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    width: 100vw;
-    border: 2px solid var(--color-basic_green);
-    background-color: var(--color-basic_green);
-    z-index: -1;
-    right: calc(100% + 40px);
-  }
-
-  .additional__title::after {
-    content: "";
-    left: calc(100% + 40px);
+    margin-left: -40px;
+    padding: 0 40px 0 40px;
+    background-color: var(--color-basic-white);
   }
 
   .additional__list {
@@ -158,32 +152,22 @@
 
 @media (min-width: @desktop-width) {
   .additional {
-    width: 1440px;
+    width: 100%;
     height: 128px;
     padding: 0;
-    margin: 0 0 66px 0;
+    margin: 0 auto 66px auto;
     border: none;
   }
 
   .additional__container {
     max-width: 1220px;
-    margin: 0;
+    margin: 0 auto;
   }
 
   .additional__title {
     font-size: 36px;
     line-height: 36px;
-    margin: 0 0 62px 0;
-  }
-
-  .additional__title::before {
-    content: "";
-    right: calc(100% + 40px);
-  }
-
-  .additional__title::after {
-    content: "";
-    left: calc(100% + 40px);
+    margin-bottom: 62px;
   }
 
   .additional__list {

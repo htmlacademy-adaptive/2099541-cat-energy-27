@@ -1,8 +1,22 @@
 .comment {
-  width: 320px;
+  width: 100%;
   padding: 0;
   border: none;
-  margin: 0 0 23px 0;
+  margin: 0 auto 23px auto;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.comment::before{
+  content: "";
+  position: absolute;
+  top: 14px;
+  width: 100%;
+  right: -4px;
+  border: 2px solid var(--color-basic_green);
+  background-color: var(--color-basic_green);
+  z-index: -1;
+  margin-right: -50vw;
 }
 
 .comment__container {
@@ -17,20 +31,9 @@
   font-size: 24px;
   line-height: 26px;
   position: relative;
-  margin: 0 0 38px 20px;
+  margin: 0 0 38px 0;
   padding: 0;
   width: 121px;
-}
-
-.comment__title::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  width: 100vw;
-  border: 2px solid var(--color-basic_green);
-  background-color: var(--color-basic_green);
-  z-index: -1;
-  left: calc(100% + 22px);
 }
 
 .comment__input {
@@ -47,40 +50,34 @@
 
 @media (min-width: @tablet-width) {
   .comment {
-    width: 768px;
+    width: 100%;
     height: 286px;
     padding: 0;
     border: none;
-    margin: 0 0 63px 0;
+    margin: 0 auto 63px auto;
+  }
+
+  .comment::before {
+    top: 20px;
+    margin: 0;
+    right: 0;
   }
 
   .comment__container {
     max-width: 630px;
     height: 174px;
-    margin: 0;
+    margin: 0 auto;
+    padding: 0 70px;
   }
 
   .comment__title {
     font-size: 36px;
     line-height: 36px;
-    margin: 0 0 76px 0;
+    margin-bottom: 76px;
     width: 182px;
-  }
-
-  .comment__title::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    width: 100vw;
-    border: 2px solid var(--color-basic_green);
-    background-color: var(--color-basic_green);
-    z-index: -1;
-    right: calc(100% + 40px);
-  }
-
-  .comment__title::after {
-    content: "";
-    left: calc(100% + 40px);
+    margin-left: -40px;
+    padding: 0 40px 0 40px;
+    background-color: var(--color-basic-white);
   }
 
   .comment__item {
@@ -104,7 +101,7 @@
 
 @media (min-width: @desktop-width) {
   .comment {
-    width: 1440px;
+    width: 100%;
     height: 286px;
     padding: 0;
     border: none;
@@ -113,18 +110,12 @@
 
   .comment__container {
     max-width: 1220px;
-    margin: 0;
+    margin: 0 auto;
     height: 174px;
   }
 
-  .comment__title::before {
-    content: "";
-    right: calc(100% + 40px);
-  }
-
-  .comment__title::after {
-    content: "";
-    left: calc(100% + 40px);
+  .comment__title {
+    margin-bottom: 76px;
   }
 
   .comment__list {
