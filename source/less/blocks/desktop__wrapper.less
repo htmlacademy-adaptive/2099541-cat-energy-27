@@ -1,13 +1,21 @@
-  .desktop-wrapper::before {
-    display: none;
-  }
+.desktop-wrapper {
+  overflow-x: hidden;
+}
 
-  .desktop-wrapper__title {
-    display: none;
-  }
+.desktop-wrapper::before {
+  display: none;
+}
+
+.desktop-wrapper__title {
+  display: none;
+}
 
 
 @media (min-width: @desktop-width) {
+  .desktop-wrapper {
+    overflow-x: hidden;
+  }
+
   .desktop-wrapper::before {
     display: none;
   }
@@ -22,6 +30,7 @@
     max-width: 100%;
     margin: 0 auto;
     position: relative;
+    overflow-x: hidden;
   }
 
   .desktop-wrapper::before {
@@ -45,8 +54,7 @@
     line-height: 36px;
     position: relative;
     background-color: var(--color-basic-white);
-    display: inline-block;
-    margin-top: 75px;
+    margin-top: 76px;
     margin-bottom: 0;
     margin-left: -40px;
     padding: 0 40px 0 40px;

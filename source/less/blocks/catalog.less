@@ -24,6 +24,27 @@
   border-top: 1px solid var(--color-special_grey);
 }
 
+.catalog__item--fish500 {
+  margin-top: 1px;
+}
+
+.catalog__item--fish1000 {
+  margin-top: 2px;
+}
+
+.catalog__item--buckwheat500 {
+  margin-top: 1px;
+}
+
+.catalog__item--rise500 {
+  margin-top: 2px;
+}
+
+.catalog__item--show-more {
+  margin-top: 4px;
+  height: 203px;
+}
+
 .catalog__product {
   display: flex;
   flex-wrap: wrap;
@@ -57,7 +78,7 @@
 
 .catalog__product-list {
   margin: 0;
-  width: 142px;
+  width: 140px;
   height: 44px;
   position: absolute;
   right: 0;
@@ -155,7 +176,7 @@
   .catalog__list {
     display: grid;
     grid-template-columns: 324px 324px;
-    gap: 143px 60px;
+    gap: 140px 60px;
   }
 
   .catalog__item {
@@ -172,6 +193,12 @@
     border: 2px solid var(--color-basic_grey);
   }
 
+  .catalog__item--show-more {
+    width: 320px;
+    margin-top: 0;
+    height: 425px;
+  }
+
   .catalog__product {
     width: 252px;
     height: auto;
@@ -181,26 +208,34 @@
   .catalog__item-title {
     font-size: 20px;
     line-height: 24px;
-    padding: 161px 0 21px 42px;
+    padding: 160px 0 21px 50px;
     max-width: 155px;
     text-align: center;
   }
 
-  .catalog__item-title br {
-    display: none;
-  }
-
   .catalog__item-link {
     position: absolute;
-    top: -73px;
-    left: 38px;
+    top: -74px;
+    left: 42px;
   }
 
   .catalog__product-list {
     position: static;
-    width: 251px;
+    width: 250px;
     height: 89px;
-    margin-bottom: 33px;
+    margin-bottom: 40px;
+  }
+
+  .catalog__product-list--small-img {
+    margin-top: 4px;
+    margin-left: 2px;
+    margin-bottom: 34px;
+  }
+
+  .catalog__product-list--big-img {
+    margin-top: 4px;
+    margin-left: 1px;
+    margin-bottom: 35px;
   }
 
   .catalog__product-item {
@@ -210,13 +245,22 @@
     margin-bottom: 7px;
   }
 
+  .catalog__product-mean {
+    max-width: 54px;
+    margin-left: -10px;
+  }
+
+  .catalog__product-description {
+    margin-bottom: 8px;
+  }
+
   .catalog__product--show-more {
     width: 249px;
   }
 
   .catalog__link--show-more {
     position: absolute;
-    top: 52px;
+    top: 50px;
     left: 94px;
   }
 
@@ -224,7 +268,7 @@
     height: auto;
     margin: 0;
     width: 134px;
-    padding: 155px 0 20px 58px;
+    padding: 157px 0 20px 58px;
   }
 
   .catalog__item-description {
@@ -232,7 +276,11 @@
     font-size: 16px;
     line-height: 18px;
     margin: 0;
-    padding-left: 38px;
+    padding-left: 41px;
+  }
+
+  .catalog__item-button {
+    margin-left: 2px;
   }
 
   .catalog__item-button--green-button {
@@ -245,10 +293,6 @@
 
   .catalog__item-button--show-more {
     margin-top: 87px;
-  }
-
-  .catalog__product-description {
-    margin-bottom: 9px;
   }
 }
 
@@ -272,18 +316,37 @@
     height: 431px;
   }
 
+  .catalog__item--show-more {
+    width: 240px;
+    height: 428px;
+  }
+
   .catalog__product {
     width: 169px;
     height: 156px;
   }
 
   .catalog__item-title {
-    padding-left: 10px;
+    padding-left: 11px;
+    padding-top: 161px;
   }
 
   .catalog__item-link {
     top: -80px;
     left: 0;
+  }
+
+  .catalog__product-list--big-img {
+    margin-top: 7px;
+    margin-left: 3px;
+  }
+
+  .catalog__product-list--small-img {
+    margin-top: 6px;
+  }
+
+  .catalog__item-button--buckwheat1000 {
+    margin-top: -4px;
   }
 
   .catalog__product--show-more {

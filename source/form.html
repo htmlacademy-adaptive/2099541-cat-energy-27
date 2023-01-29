@@ -40,13 +40,13 @@
         </button>
         <div class="main-navigation__container">
           <ul class="main-navigation__list reset-list">
-            <li class="main-navigation__list-item">
+            <li class="main-navigation__list-item main-navigation__list-item--index main-navigation__list-item--form-main">
               <a class="main-navigation__link" href="index.html">Главная</a>
             </li>
-            <li class="main-navigation__list-item">
+            <li class="main-navigation__list-item main-navigation__list-item--catalog main-navigation__list-item--form-catalog">
               <a class="main-navigation__link" href="catalog.html">Каталог продукции</a>
             </li>
-            <li class="main-navigation__list-item main-navigation__list-item--current">
+            <li class="main-navigation__list-item main-navigation__list-item--form main-navigation__list-item--current">
               <a class="main-navigation__link" href="form.html">Подбор программы</a>
             </li>
           </ul>
@@ -68,58 +68,58 @@
         </div>
         <form class="form-data__form reset-list" action="https://echo.htmlacademy.ru" method="get">
           <div class="form-data__wrapper-desktop">
-          <fieldset class="pet-data">
-            <legend class="visually-hidden">Информация питомца</legend>
-            <div class="pet-data__container">
-              <ul class="pet-data__list reset-list">
-                <li class="pet-data__item">
-                  <label class="pet-data__label pet-data__label--required" for="name">имя:*</label>
-                  <input class="pet-data__input pet-data__input--name" type="text" placeholder="Барсик" name="name"
-                    id="name" />
-                </li>
-                <li class="pet-data__item">
-                  <label class="pet-data__label pet-data__label--required" for="weight">вес (кг):*</label>
-                  <input class="pet-data__input pet-data__input--weight" type="number" placeholder="7" name="weight"
-                    id="weight" />
-                </li>
-                <li class="pet-data__item">
-                  <label class="pet-data__label" for="age">возраст (лет):</label>
-                  <input class="pet-data__input pet-data__input--age" type="number" placeholder="7" name="age"
-                    id="age" />
-                </li>
-              </ul>
-            </div>
-          </fieldset>
-          <fieldset class="service-data">
-            <legend class="visually-hidden">Вид программы</legend>
-            <div class="service-data__container">
-              <ul class="service-data__list reset-list">
-                <li class="service-data__item">
-                  <label class="service-data__label">
-                    <input class="visually-hidden service-data__input" type="radio" value="lose" name="service"
-                      checked />
-                    <span class="service-data__mark"></span>
-                    <span class="service-data__name">Похудение</span>
-                  </label>
-                </li>
-                <li class="service-data__item">
-                  <label class="service-data__label">
-                    <input class="visually-hidden service-data__input" type="radio" value="gain" name="service" />
-                    <span class="service-data__mark"></span>
-                    <span class="service-data__name">Набор массы</span>
-                  </label>
-                </li>
-                <li class="service-data__item">
-                  <label class="service-data__label">
-                    <input class="visually-hidden service-data__input" type="radio" value="unknown" name="service" />
-                    <span class="service-data__mark"></span>
-                    <span class="service-data__name">Не знаю (нужен ваш совет)</span>
-                  </label>
-                </li>
-              </ul>
-            </div>
-          </fieldset>
-        </div>
+            <fieldset class="pet-data">
+              <legend class="visually-hidden">Информация питомца</legend>
+              <div class="pet-data__container">
+                <ul class="pet-data__list reset-list">
+                  <li class="pet-data__item">
+                    <label class="pet-data__label pet-data__label--required" for="name">имя:*</label>
+                    <input class="pet-data__input pet-data__input--name" type="text" placeholder="Барсик" name="name"
+                      id="name" />
+                  </li>
+                  <li class="pet-data__item">
+                    <label class="pet-data__label pet-data__label--required" for="weight">вес (кг):*</label>
+                    <input class="pet-data__input pet-data__input--weight" type="number" placeholder="7" name="weight"
+                      id="weight" />
+                  </li>
+                  <li class="pet-data__item">
+                    <label class="pet-data__label" for="age">возраст (лет):</label>
+                    <input class="pet-data__input pet-data__input--age" type="number" placeholder="7" name="age"
+                      id="age" />
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
+            <fieldset class="service-data">
+              <legend class="visually-hidden">Вид программы</legend>
+              <div class="service-data__container">
+                <ul class="service-data__list reset-list">
+                  <li class="service-data__item">
+                    <label class="service-data__label">
+                      <input class="visually-hidden service-data__input" type="radio" value="lose" name="service"
+                        checked />
+                      <span class="service-data__mark"></span>
+                      <span class="service-data__name">Похудение</span>
+                    </label>
+                  </li>
+                  <li class="service-data__item">
+                    <label class="service-data__label">
+                      <input class="visually-hidden service-data__input" type="radio" value="gain" name="service" />
+                      <span class="service-data__mark"></span>
+                      <span class="service-data__name">Набор массы</span>
+                    </label>
+                  </li>
+                  <li class="service-data__item">
+                    <label class="service-data__label">
+                      <input class="visually-hidden service-data__input" type="radio" value="unknown" name="service" />
+                      <span class="service-data__mark"></span>
+                      <span class="service-data__name">Не знаю (нужен ваш совет)</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
+          </div>
           <fieldset class="owner-data">
             <legend class="owner-data__legend visually-hidden">
               Контактные данные (владельца кота)
@@ -135,7 +135,7 @@
                   <div class="owner-data__wrapper owner-data__wrapper--mail">
                     <input class="owner-data__input owner-data__input--mail" type="email"
                       placeholder="kuklachev@gmail.com" name="mail" id="mail" />
-                    <svg class="owner-data__input-icon" width="18" height="14">
+                    <svg class="owner-data__input-icon owner-data__input-icon--mail" width="18" height="14">
                       <use xlink:href="img/sprite.svg#mail"></use>
                     </svg>
                   </div>
@@ -176,28 +176,28 @@
             <div class="additional__container">
               <h2 class="additional__title">Дополнительно</h2>
               <ul class="additional__list grid-list reset-list">
-                <li class="additional__item grid-item">
+                <li class="additional__item grid-item additional__item--sweetener">
                   <label class="additional__label">
                     <input class="visually-hidden additional__input" type="checkbox" name="sweetener" checked />
                     <span class="additional__mark"></span>
                     <span class="additional__text">Сахарозаменитель</span>
                   </label>
                 </li>
-                <li class="additional__item grid-item">
+                <li class="additional__item grid-item additional__item--water">
                   <label class="additional__label">
                     <input class="visually-hidden additional__input" type="checkbox" name="water" />
                     <span class="additional__mark"></span>
                     <span class="additional__text">Питьевая вода</span>
                   </label>
                 </li>
-                <li class="additional__item grid-item">
+                <li class="additional__item grid-item additional__item--milk">
                   <label class="additional__label">
                     <input class="visually-hidden additional__input" type="checkbox" name="milk" />
                     <span class="additional__mark"></span>
                     <span class="additional__text">Молоко</span>
                   </label>
                 </li>
-                <li class="additional__item grid-item">
+                <li class="additional__item grid-item additional__item--vitamins">
                   <label class="additional__label">
                     <input class="visually-hidden additional__input" type="checkbox" name="vitamins" />
                     <span class="additional__mark"></span>
@@ -211,7 +211,7 @@
             <button class="send-information__button send-information__button--green-button" type="submit">
               Отправить заявку
             </button>
-            <p class="send-information__about">* __ Обязательные поля</p>
+            <p class="send-information__about">* -- Обязательные поля</p>
           </div>
         </form>
       </div>
@@ -223,7 +223,7 @@
         <div class="contacts__wrapper">
           <div class="contacts__title">
             <p class="contacts__indent-1">Приглашаем</p>
-            <p class="contacts__indent-2">к сотрудничеству диллеров!</p>
+            <p class="contacts__indent-2">к сотрудничеству дилеров!</p>
           </div>
           <p class="contacts__text">
             ул. Большая Конюшенная, д. 19/8

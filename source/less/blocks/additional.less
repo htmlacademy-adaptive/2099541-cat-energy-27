@@ -1,7 +1,7 @@
 .additional {
   width: 100%;
   padding: 0;
-  margin: 0 auto 41px auto;
+  margin: 0 auto 35px auto;
   border: none;
   position: relative;
   overflow-x: hidden;
@@ -30,14 +30,22 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
-  margin: 0 0 34px 0;
+  margin: 0 0 35px 0;
   position: relative;
   padding: 0;
   width: 141px;
 }
 
-.additional__item:not(:last-child) {
-  margin-bottom: 25px;
+.additional__item--sweetener {
+  margin-bottom: 15px;
+}
+
+.additional__item--water {
+  margin-bottom: 12px;
+}
+
+.additional__item--milk {
+  margin-bottom: 11px;
 }
 
 .additional__label {
@@ -89,6 +97,7 @@
     padding: 0;
     margin: 0;
     border: none;
+    overflow: hidden;
   }
 
   .additional::before {
@@ -154,10 +163,11 @@
 @media (min-width: @desktop-width) {
   .additional {
     width: 100%;
-    height: 128px;
+    height: 139px;
     padding: 0;
-    margin: 0 auto 66px auto;
+    margin: 0 auto 55px auto;
     border: none;
+    overflow: hidden;
   }
 
   .additional__container {
@@ -168,7 +178,7 @@
   .additional__title {
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 62px;
+    margin-bottom: 57px;
   }
 
   .additional__list {
@@ -178,11 +188,11 @@
   }
 
   .additional__item:nth-child(1) {
-    margin-right: 105px;
+    margin-right: 106px;
   }
 
   .additional__item:nth-child(2) {
-    margin-right: 137px;
+    margin-right: 139px;
   }
 
   .additional__item:nth-child(3) {
