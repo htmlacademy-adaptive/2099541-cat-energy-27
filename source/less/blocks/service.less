@@ -1,5 +1,6 @@
 .service {
-  width: 320px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .service__container {
@@ -21,7 +22,7 @@
   content: url("../img/service/mobile/cat_slim-mobile.svg");
   position: absolute;
   top: 20px;
-  left: 20px;
+  left: 23px;
 }
 
 .service__item--pro::before {
@@ -38,7 +39,8 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
-  padding-top: 30px;
+  padding-top: 31px;
+  padding-left: 10px;
   text-align: center;
   margin: 0;
 }
@@ -52,7 +54,7 @@
   font-size: 14px;
   line-height: 18px;
   margin: 0;
-  padding: 22px 33px 23px 20px;
+  padding: 30px 33px 16px 20px;
 }
 
 .service__description::after {
@@ -88,7 +90,8 @@
 
 @media (min-width: @tablet-width) {
   .service {
-    width: 768px;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .service__container {
@@ -126,15 +129,16 @@
     line-height: 36px;
     text-transform: uppercase;
     text-align: left;
-    padding: 77px 0 24px 53px;
+    padding: 76px 0 24px 55px;
   }
 
   .service__description {
     font-size: 16px;
     line-height: 24px;
     min-width: 340px;
-    margin-left: 53px;
-    padding: 0 0 52px 0;
+    margin-left: 54px;
+    margin-top: -1px;
+    padding: 0 0 53px 0;
   }
 
   .service__description::after {
@@ -150,19 +154,21 @@
     text-transform: uppercase;
     text-decoration: none;
     color: var(--color-basic-black);
-    margin-left: 53px;
+    margin-left: 55px;
   }
 
   .service__link::after {
     content: url("../img/service/tablet/icon_arrow.svg");
-    padding-left: 25px;
+    padding-left: 26px;
+    position: absolute;
+    bottom: 62px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .service {
-    width: 1440px;
-    margin-top: 82px;
+    width: 100%;
+    margin: 80px auto 0 auto;
   }
 
   .service__container {
@@ -170,6 +176,7 @@
   }
 
   .service__list {
+    width: auto;
     display: flex;
     justify-content: space-between;
   }
@@ -199,16 +206,26 @@
 
   .service__title {
     text-align: center;
-    padding: 77px 0 73px 53px;
+    padding: 77px 0 73px 1px;
+    margin-left: 20px;
+  }
+
+  .service__title--pro {
+    padding-left: 40px;
   }
 
   .service__description {
     min-width: 467px;
-    margin-left: 53px;
+    margin-left: 51px;
+    margin-top: 1px;
     padding: 0 0 27px 0;
   }
 
   .service__link:hover::after {
     content: url("../img/service/tablet/icon_arrow_hover.svg");
+  }
+
+  .service__link {
+    margin-left: 52px;
   }
 }

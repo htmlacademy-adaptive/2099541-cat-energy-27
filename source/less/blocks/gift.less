@@ -1,6 +1,6 @@
 .gift {
-  width: 320px;
-  margin: 35px 0 35px 0;
+  width: 100%;
+  margin: 33px auto 37px auto;
 }
 
 .gift__container {
@@ -12,7 +12,7 @@
 .gift__container::before {
   content: url("../img/gift/mobile/gift.svg");
   position: relative;
-  top: 65px;
+  top: 60px;
   left: 100px;
 }
 
@@ -43,12 +43,18 @@
   text-align: center;
   width: 161px;
   margin: 105px 0 0 58px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gift__indent-1 {
+  width: 161px;
 }
 
 @media (min-width: @tablet-width) {
   .gift {
-    width: 768px;
-    margin: 69px 0 76px 0;
+    width: 100%;
+    margin: 67px auto 76px auto;
     height: 200px;
   }
 
@@ -60,8 +66,8 @@
   .gift__container::before {
     content: url("../img/gift/mobile/gift.svg");
     position: relative;
-    top: 60px;
-    left: 80px;
+    top: 58px;
+    left: 79px;
   }
 
   .gift__container--background {
@@ -85,7 +91,7 @@
   .gift__condition {
     margin-top: 0;
     position: absolute;
-    right: 128px;
+    right: 125px;
     top: 71px;
     text-align: left;
   }
@@ -94,14 +100,18 @@
 @media (min-width: @desktop-width) {
   .gift {
     position: absolute;
-    bottom: 498px;
+    bottom: 15px;
     width: 245px;
-    left: 1090px;
+    right: 0;
   }
 
   .gift__container {
     max-width: 245px;
     height: 289px;
+  }
+
+  .gift__container::before {
+    margin-left: 5px;
   }
 
   .gift__container--background {

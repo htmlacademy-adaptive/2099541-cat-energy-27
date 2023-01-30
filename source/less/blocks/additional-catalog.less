@@ -1,6 +1,20 @@
 .additional-catalog {
-  width: 320px;
-  overflow-x: visible;
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.additional-catalog::before {
+  content: "";
+  position: absolute;
+  top: 38px;
+  width: 100%;
+  right: 0;
+  border: 2px solid var(--color-basic_green);
+  background-color: var(--color-basic_green);
+  z-index: -1;
+  margin-right: -50vw;
 }
 
 .additional-catalog__container {
@@ -15,27 +29,35 @@
   font-size: 24px;
   line-height: 24px;
   position: relative;
+  background-color: var(--color-basic-white);
   display: inline-block;
-  margin: 25px 0 36px 0;
-}
-
-.additional-catalog__title::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  width: 10000px;
-  border: 2px solid var(--color-basic_green);
-  background-color: var(--color-basic_green);
-  z-index: -1;
-  left: calc(100% + 33px);
+  margin: 0;
+  padding: 25px 20px 36px 0;
 }
 
 .additional-catalog__item {
   border-bottom: 1px solid var(--color-special_grey-2);
+  height: 130px;
 }
 
 .additional-catalog__item:first-child {
   border-top: 1px solid var(--color-special_grey-2);
+}
+
+.additional-catalog__item--sweetener {
+  margin-top: -1px;
+}
+
+.additional-catalog__item--water {
+  margin-top: -2px;
+}
+
+.additional-catalog__item--milk {
+  margin-top: -1px;
+}
+
+.additional-catalog__item--vitamins {
+  margin-top: -1px;
 }
 
 .additional-catalog__title-ordinary {
@@ -70,8 +92,14 @@
   justify-content: space-between;
 }
 
+.additional-catalog__product-mean {
+  margin-top: 2px;
+}
+
 .additional-catalog__product-description {
   margin: 0;
+  margin-top: 2px;
+  margin-left: 1px;
 }
 
 .additional-catalog__item-button {
@@ -102,7 +130,12 @@
 
 @media (min-width: @tablet-width) {
   .additional-catalog {
-    width: 768px;
+    width: 100%;
+  }
+
+  .additional-catalog::before {
+    top: 86px;
+    margin: 0;
   }
 
   .additional-catalog__container {
@@ -112,22 +145,9 @@
   .additional-catalog__title {
     font-size: 36px;
     line-height: 36px;
-    margin: 68px 0 80px 36px;
-  }
-
-  .additional-catalog__title::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    width: 10000px;
-    border: 2px solid var(--color-basic_green);
-    background-color: var(--color-basic_green);
-    z-index: -1;
-    right: calc(100% + 36px);
-  }
-
-  .additional-catalog__title::after {
-    content: "";
+    margin-top: 64px;
+    margin-bottom: 80px;
+    padding: 0 40px 0 38px;
   }
 
   .additional-catalog__list {
@@ -138,23 +158,24 @@
   .additional-catalog__item {
     width: 708px;
     height: 139px;
+    border: 1px solid var(--color-special_grey-2);
   }
 
   .additional-catalog__product {
     padding-top: 26px;
     max-width: 632px;
-    margin-left: 36px;
+    margin-left: 37px;
   }
 
   .additional-catalog__title-ordinary {
     font-size: 20px;
     line-height: 20px;
-    margin: 0 0 20px 0;
+    margin: 0 0 25px 0;
   }
 
   .additional-catalog__product-list {
     margin: 0;
-    width: 225px;
+    width: 226px;
   }
 
   .additional-catalog__product-item {
@@ -163,10 +184,20 @@
     justify-content: right;
     font-size: 16px;
     line-height: 20px;
+    margin-top: 2px;
   }
 
   .additional-catalog__product-mean {
-    margin-left: 49px;
+    margin-left: 50px;
+    font-family: "lato", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .additional-catalog__product-mean--water {
+    margin-left: 60px;
   }
 
   .additional-catalog__item-button--green-button {
@@ -176,26 +207,21 @@
 
 @media (min-width: @desktop-width) {
   .additional-catalog {
-    width: 896px;
-    margin: 76px 0 80px  110px;
+    width: 100%;
+    margin: 78px auto 82px  auto;
+  }
+
+  .additional-catalog::before {
+    display: none;
   }
 
   .additional-catalog__container {
     max-width: 896px;
+    margin: 0;
   }
 
   .additional-catalog__title {
-    margin: 0 0 80px 0;
-  }
-
-  .additional-catalog__title::before {
-    content: "";
-    right: calc(100% + 40px);
-  }
-
-  .additional-catalog__title::after {
-    content: "";
-    left: calc(100% + 35px);
+    display: none;
   }
 
   .additional-catalog__list {
@@ -205,6 +231,8 @@
   .additional-catalog__item {
     width: 896px;
     height: 72px;
+    border-left: none;
+    border-right: none;
   }
 
   .additional-catalog__product {
@@ -215,6 +243,20 @@
     margin: 0;
     padding: 0;
     align-items: center;
+  }
+
+  .additional-catalog__product-item {
+    margin-top: 8px;
+    width: 288px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .additional-catalog__product-mean--water {
+    margin-left: 10px;
+    width: 45px;
   }
 
   .additional-catalog__item-button {
@@ -241,11 +283,8 @@
     padding-left: 125px;
   }
 
-  .additional-catalog__product-item {
-    width: 288px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    text-align: left;
+  .additional-catalog__product-list--water {
+    width: 300px;
+    padding-left: 135px;
   }
 }
